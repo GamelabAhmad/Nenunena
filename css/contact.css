@@ -53,7 +53,6 @@ nav {
   }
 }
 
-
 footer {
   background-color: #007f73;
   color: #fff;
@@ -116,7 +115,6 @@ footer {
   }
 }
 
-
 .headerContact {
   margin-top: 100px;
   margin-left: 30%;
@@ -162,7 +160,6 @@ footer {
 .form-group span {
   color: red;
 }
-
 
 .utama {
   display: flex;
