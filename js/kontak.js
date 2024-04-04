@@ -8,7 +8,7 @@ function kirimWA() {
   let phoneRegex = /^(^\+62\s?|^0)(\d{3,4}-?){2}\d{3,4}$/;
 
   if (nama == '' || telp == '' || email == '' || pesan == '') {
-    return swal('', 'Data tidak ditemukan', 'warning');
+    return swal('', 'Masukkan data yang benar', 'warning');
   } else if (!phoneRegex.test(telp)) {
     return swal('', 'Masukkan telepon yang Valid', 'warning');
   } else if (!emailRegex.test(email)) {
@@ -17,6 +17,6 @@ function kirimWA() {
 
   let pesanWA = `Selamat siang, saya ${nama} dengan nomor telepon ${telp} dan email ${email}, mengirimkan pesan sebagai berikut : ${pesan}`;
   let encode = encodeURIComponent(pesanWA);
-  let waLink = `https://wa.me/082130105810?text=${encode}`;
+  let waLink = `https://wa.me/+6282130105810?text=${encode}`;
   kirim.attr('href', waLink);
 }
