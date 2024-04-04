@@ -8,7 +8,7 @@ function kirimWA() {
   let phoneRegex = /^(^\+62\s?|^0)(\d{3,4}-?){2}\d{3,4}$/;
 
   if (nama == '' || telp == '' || email == '' || pesan == '') {
-    return swal('', 'Masukkan data yang benar', 'warning');
+    return swal('', 'Tolong Masukkan data yang benar', 'warning');
   } else if (!phoneRegex.test(telp)) {
     return swal('', 'Masukkan telepon yang Valid', 'warning');
   } else if (!emailRegex.test(email)) {
