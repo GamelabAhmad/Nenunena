@@ -1,167 +1,108 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  outline: none;
-  border: none;
-  text-decoration: none;
-}
-
-body {
-  font-family: "Poppins", sans-serif;
-  background: #ffffff;
-  color: #fff;
-  position: relative;
-  height: 100vh;
+/* navigasi */
+.navbar.bg-body-tertiary {
+  background-color: #007f73 !important;
+  height: 80px;
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
+  z-index: 1000;
 }
 
-/* Main Content */
-.main {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  background-image: url("../image/header-bg.jpeg.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  position: relative;
-}
-
-.main .content {
-  padding: 1.4rem 7%;
-  max-width: 60%;
-  color: #000;
-}
-
-.main .content h1 {
-  font-size: 4rem;
-  color: #007f73;
-  line-height: 1.2;
-}
-
-.main .content h1 span {
-  color: #ffdf9a;
-}
-
-.hero .content p {
-  font-size: 1.6rem;
-  margin-top: 1rem;
-  line-height: 1.4;
-  font-weight: 100;
-  mix-blend-mode: difference;
-}
-
-.main .content .cta {
-  margin-top: 1rem;
-  display: inline-block;
-  padding: 1rem 3rem;
-  font-size: 1.4rem;
+.container-fluid a {
   color: #fff;
-  background-color: #007f73;
-  border-radius: 0.5rem;
-  box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
 }
 
-/* Contoh Produk */
-.contoh-produk h2 {
-  margin-bottom: 1rem;
-  font-size: 2rem;
-}
-
-.contoh-produk p {
-  font-size: 1.3rem;
-}
-
-.contoh-produk {
-  color: #007f73;
-  max-width: 100rem;
-  text-align: center;
-  margin: auto;
-  line-height: 1.6;
-  padding: 4rem 7%;
-}
-
-.contoh-produk .row {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 2rem;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-}
-
-.row .produk-card {
-  border-radius: 20px;
-  overflow: hidden;
-  position: relative;
-  margin: 1rem;
-  cursor: pointer;
-}
-
-.row .img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 15px;
-  display: block;
-  transition: transform 0.3s ease;
-}
-
-.row .produk-card:hover .img {
+.container-fluid a:hover {
+  color: #fff;
   transform: scale(1.1);
 }
 
-.row .body {
-  width: 300px;
-  height: 300px;
-  top: 0;
-  right: -100%;
-  position: absolute;
-  background: #00000022;
-  backdrop-filter: blur(5px);
-  border-radius: 15px;
+.nav-item a {
   color: #fff;
-  padding: 1rem 1rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  transition: 1s;
 }
 
-.row .produk-card:hover .body {
-  right: 0;
+.nav-item a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 0.4em;
+  text-decoration-color: #fff;
+  color: #fff;
 }
 
-.row .body h1 {
-  text-transform: uppercase;
-  font-size: 0.9rem;
-}
-
-.row .body p {
-  text-transform: capitalize;
-  font-size: 0.7rem;
-  font-weight: 200;
-  padding: 1rem;
-}
-
-/* Respomsive */
-@media (max-width: 1366px) {
-  html {
-    font-size: 75%;
-  }
-}
-
-/* Tablet */
 @media (max-width: 768px) {
-  html {
-    font-size: 62.5%;
+  .navbar {
+    padding: 10px;
+  }
+
+  .container-fluid {
+    display: flex;
+    justify-content: center;
+  }
+
+  .nav-item {
+    margin: 0 5px;
+  }
+
+  .nav-item a {
+    padding: 10px;
+    text-align: center;
   }
 }
 
-/* Mobile */
-@media (max-width: 450px) {
-  html {
-    font-size: 55%;
-  }
+/* konten 1 */
+.container {
+  margin-top: 150px;
+}
+
+.col-md-6 img {
+  border-radius: 100px;
+}
+
+.col-md-6 p {
+  text-align: justify;
+}
+
+/* konten 2 */
+.container-dua {
+  margin-top: 120px;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.container-dua h3 {
+  margin-bottom: 10px;
+}
+
+.container-dua h4 {
+  margin-top: 0;
+}
+
+/* konten 3 */
+.grid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 250px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.grid img {
+  width: calc(100% / 7 - 10px);
+  /* Mengatur lebar gambar dengan membagi lebar container menjadi 7 bagian */
+  height: auto;
+  position: relative;
+  transition: transform 0.3s ease;
+  /* Efek transisi untuk hover */
+}
+
+.grid img:hover {
+  transform: scale(1.1);
+  /* Memperbesar gambar saat dihover */
+}
+
+/* konten 4 */
+.container h3 {
+  margin-bottom: 50px;
+  text-align: center;
 }
