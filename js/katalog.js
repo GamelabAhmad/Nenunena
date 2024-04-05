@@ -22,7 +22,7 @@ $(document).ready(function () {
 
     const cardPrice = $('<p class="fs-5 fw-semibold text-gradient">Rp. 630.000,00</p>');
 
-    const button = $('<a class="btn btn-success px-4 h-100">Beli</a>').attr('href', 'https://api.whatsapp.com/send?phone=082130105810');
+    const button = $('<a class="btn btn-success px-4 h-100">Beli</a>').attr('href', 'https://wa.me/+6282130105810');
 
     cardDetails.append(cardPrice);
     cardDetails.append(button);
